@@ -1,0 +1,17 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "CallAPI";
+}
+
+<h2>Todo List</h2>
+
+@if (Model != null)
+{
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>
+}
+
